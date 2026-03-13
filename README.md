@@ -1,12 +1,3 @@
-
-## 📦 Requirements
-
-- Python 3.11+
-- Git
-- Linux / macOS / WSL (Windows via WSL recommended)
-
----
-
 ## ⚙️ Installation
 
 ### 1. Clone Repository
@@ -51,33 +42,14 @@ Edit `.env` and configure:
 - `TELEGRAM_CHAT_ID`
 - Any additional required keys
 
-If a value exists in both `.env` and `strategy.yaml`, `.env` takes priority.
-
 ---
 
-### 6. Strategy Configuration
 
-Edit:
-
-```
-strategy.yaml
-```
-
-Modify thresholds, filters, or risk parameters according to your trading logic.
-
----
-
-### 7. Running Dexy
+### 6. Running Dexy
 
 ```bash
 python3 main.py
 ```
-
-Dexy will:
-
-- Poll DexScreener  
-- Apply strategy filters  
-- Send alerts to configured Telegram chat  
 
 ---
 
